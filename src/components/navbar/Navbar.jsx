@@ -11,7 +11,7 @@ function Navbar() {
         <div className="container">
           <div className="navLeft">
             <div className="logo">
-              <Link href="/"><h1> QPICK</h1></Link>
+              <Link to="/"><h1> QPICK</h1></Link>
             </div>
             <div className="selectMobilePhone">
               <label for="phones">Telefon rusumini tanlang:</label>
