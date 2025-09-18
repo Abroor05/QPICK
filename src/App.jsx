@@ -7,9 +7,12 @@ import Navbar from './components/navbar/Navbar'
 import Footer from './components/footer/Footer'
 import Home from './pages/home/Home'
 import Cart from './pages/cart/Cart'
+import SignIn from './pages/signIn/SignIn'
+import Login from './pages/login/Login'
 
 function App() {
   const [count, setCount] = useState(0)
+  
 
   return (
     <>
@@ -18,6 +21,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/cart' element={<Cart/>} />
+          <Route path='/signin' element={<SignIn/>} />
+          <Route path='/login' element={<Login/>} />
         </Routes>
 
         <Footer />

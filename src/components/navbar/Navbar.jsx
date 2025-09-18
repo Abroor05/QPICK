@@ -1,7 +1,7 @@
 import React from "react";
-import { FaRegHeart } from "react-icons/fa";
+import { FaRegHeart, FaUser } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
-import "./Navbar.css"
+import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 function Navbar() {
@@ -11,7 +11,9 @@ function Navbar() {
         <div className="container">
           <div className="navLeft">
             <div className="logo">
-              <Link to="/"><h1> QPICK</h1></Link>
+              <Link to="/">
+                <h1> QPICK</h1>
+              </Link>
             </div>
             <div className="selectMobilePhone">
               <label for="phones">Telefon rusumini tanlang:</label>
@@ -31,15 +33,23 @@ function Navbar() {
           </div>
 
           <div className="navRight">
-                <div className="like">
-                    <Link to={"/like"} className="likeIcon" ><FaRegHeart /><span className="likeCount" >0</span></Link>
-                    
-                </div>
+            <div className="like">
+              <Link to={"/like"} className="likeIcon">
+                <FaRegHeart />
+                <span className="likeCount">0</span>
+              </Link>
+            </div>
 
-                <div className="cart">
-                    <Link to={"/cart"} className="cartIcon" ><FiShoppingCart /><span className="cartCount" >0</span></Link>
-                    
-                </div>
+            <div className="cart">
+              <Link to={"/cart"} className="cartIcon">
+                <FiShoppingCart />
+                <span className="cartCount">0</span>
+              </Link>
+            </div>
+
+            <div className="navLogin">
+              <Link to={"/signin"} ><FaUser /></Link>
+            </div>
           </div>
         </div>
       </div>
