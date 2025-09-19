@@ -11,7 +11,7 @@ function Login() {
             <div className="container">
                 <div className="login">
            <div className="allLogin">
-             <h1>Sign In</h1>
+             <h1>Login</h1>
 
             <div className="inputs">
               <span>
