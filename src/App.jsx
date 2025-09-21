@@ -9,15 +9,20 @@ import Home from './pages/home/Home'
 import Cart from './pages/cart/Cart'
 import SignIn from './pages/signIn/SignIn'
 import Login from './pages/login/Login'
+import LoginModal from './components/loginModal/LoginModal'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [loginModal, setLoginModal] = useState(false)
+
   
 
   return (
     <>
       <BrowserRouter>
-        <Navbar/>
+       
+        {loginModal ? <LoginModal/> : ""}
+        <Navbar setLoginModal={setLoginModal}/>
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/cart' element={<Cart/>} />

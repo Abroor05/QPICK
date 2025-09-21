@@ -22,7 +22,7 @@ function Footer() {
           <div className="fot2">
             <div className="fotMenu1">
               <Link>Избранное</Link>
-              <Link>Корзина</Link>
+              <Link to={"/cart"} >Корзина</Link>
               <Link>Контакты</Link>
             </div>
           </div>

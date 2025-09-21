@@ -1,0 +1,14 @@
+.loginModal {
+    width: 140px;
+    position: absolute;  
+    padding: 10px;
+    backdrop-filter: blur(2px);
+}   
+
+.littleModal {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
