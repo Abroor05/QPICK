@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Navbar from './components/navbar/Navbar'
@@ -22,7 +20,7 @@ function App() {
       <BrowserRouter>
        
         {loginModal ? <LoginModal/> : ""}
-        <Navbar setLoginModal={setLoginModal}/>
+        <Navbar setLoginModal={setLoginModal} loginModal={loginModal}/>
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/cart' element={<Cart/>} />

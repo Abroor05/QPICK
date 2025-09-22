@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .navBar {
+    width: 120%;
+    margin: 0 auto;
+    padding: 10px 10px;
+  }
+
+  .selectMobilePhone {
+    display: none;
+  }
+
+  .chexol {
+    width: 100%;
+    margin: 0 auto;
+  }
+}

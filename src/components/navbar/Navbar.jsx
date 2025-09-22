@@ -5,7 +5,7 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 import LoginModal from "../loginModal/LoginModal";
 
-function Navbar({ setLoginModal }) {
+function Navbar({ setLoginModal, loginModal }) {
   return (
     <>
       <div className="navBar">
@@ -49,12 +49,19 @@ function Navbar({ setLoginModal }) {
             </div>
 
             <div className="navLogin">
-              <Link
-                onClick={() => setLoginModal(prev => !prev)}
-              >
+              <Link onClick={() => setLoginModal((prev) => !prev)}>
                 <FaUser />
 
-                
+                {loginModal ? (
+                  <div className="loginModal">
+                    <div className="littleModal">
+                      <span>Login</span>
+                      <span>Log out</span>
+                    </div>
+                  </div>
+                ) : (
+                  ""
+                )}
               </Link>
             </div>
           </div>
