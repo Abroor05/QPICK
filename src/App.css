@@ -1,7 +1,8 @@
 @media (max-width: 768px) {
   .container {
-    width: 100%;
-    padding: 0 20px;
+    width: 120%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .navBar {
@@ -11,11 +12,23 @@
   }
 
   .selectMobilePhone {
-    display: none;
+    display: none !important;
   }
 
   .chexol {
     width: 100%;
     margin: 0 auto;
+  }
+
+  .footer .container {
+    width: 140%;
+  }
+
+  .fot2 {
+    display: none;
+  }
+
+  .fot3 {
+    display: none !important; 
   }
 }

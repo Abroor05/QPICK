@@ -38,7 +38,7 @@ function Login() {
 
                 <span className="Account">
                   <h4>Don't have account</h4>
-                  <Link>Sign In</Link>
+                  <Link to={"/signin"}>Sign In</Link>
                 </span>
 
               <button className="signBtn" >Login</button>

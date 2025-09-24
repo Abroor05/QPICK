@@ -3,7 +3,6 @@ import { FaRegHeart, FaUser } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-import LoginModal from "../loginModal/LoginModal";
 
 function Navbar({ setLoginModal, loginModal }) {
   return (
@@ -49,20 +48,21 @@ function Navbar({ setLoginModal, loginModal }) {
             </div>
 
             <div className="navLogin">
-              <Link onClick={() => setLoginModal((prev) => !prev)}>
+              <div onClick={() => setLoginModal((prev) => !prev)}>
                 <FaUser />
 
                 {loginModal ? (
                   <div className="loginModal">
                     <div className="littleModal">
-                      <span>Login</span>
-                      <span>Log out</span>
+                      <Link to={"/login"}>Login</Link>
+                      <Link to={"signin"}>Sign In</Link>
+                      <Link to={"/"}>Log out</Link>
                     </div>
                   </div>
                 ) : (
                   ""
                 )}
-              </Link>
+              </div>
             </div>
           </div>
         </div>

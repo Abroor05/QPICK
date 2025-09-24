@@ -7,7 +7,6 @@
   border-radius: 10px;
   margin-bottom: 30px;
   box-shadow: 0px 0px 30px rgba(189, 190, 196, 0.37);
-  border: 1px solid red;
 }
 
 .navLeft {
@@ -85,19 +84,23 @@
 
 .navRight .navLogin {
   position: relative;
+  cursor: pointer;
 }
 
 .loginModal {
   position: absolute;
   left: -105px;
-  top: 50px;
+  top: 40px;
 }
 
 .loginModal {
   width: 140px;
   position: absolute;
   padding: 10px;
-  background-color: rgba(152, 150, 187, 0.303);
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px rgba(189, 190, 196, 0.595);
+  z-index: 100;
+  backdrop-filter: blur(10px);
 }
 
 .littleModal {
@@ -106,4 +109,69 @@
   justify-content: center;
   flex-direction: column;
   gap: 10px;
+}
+
+.littleModal a {
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: black;
+  font-weight: 500;
+}
+
+
+.littleModal a:hover {
+  color: blue;
+}
+
+.selectMobilePhone {
+  display: flex;
+  align-items: center;
+  gap: 12px;                  /* Label va select orasidagi masofa */
+  max-width: 500px;
+  margin: 20px auto;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+.selectMobilePhone label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+}
+
+.selectMobilePhone select {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: #f9f9f9;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  cursor: pointer;
+  appearance: none;           /* Brauzer default strelkasini olib tashlaydi */
+  background-repeat: no-repeat;
+  background-size: 16px;
+  transition: all 0.25s ease;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.selectMobilePhone select:hover,
+.selectMobilePhone select:focus {
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* --- OCHILGAN OPTIONLAR UCHUN --- */
+.selectMobilePhone select option {
+  padding: 10px;
+  background: #fff;
+  color: #333;
+  font-size: 1rem;
+}
+
+/* Tanlangan option hover effekti */
+.selectMobilePhone select option:hover {
+  background: #e6f3ff;   /* Yengil ko‘k rang */
 }
