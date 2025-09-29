@@ -1,7 +1,3 @@
-.footer {
-  margin-top: 20px;
-}
-
 .footer .container {
   display: flex;
   align-items: start;
@@ -11,7 +7,6 @@
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   box-shadow: 2px 0px 2px 2px rgb(230, 228, 228);
-
 }
 
 .fot1 .logo h1 {

@@ -1,12 +1,12 @@
 @media (max-width: 768px) {
   .container {
-    width: 120%;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 100%;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
 
   .navBar {
-    width: 120%;
+    width: 100%;
     margin: 0 auto;
     padding: 10px 10px;
   }
@@ -21,7 +21,7 @@
   }
 
   .footer .container {
-    width: 140%;
+    width: 95%;
   }
 
   .fot2 {
@@ -30,5 +30,10 @@
 
   .fot3 {
     display: none !important; 
+  }
+
+  .cartErrorImg {
+    width: 130% !important;
+    margin: auto;
   }
 }

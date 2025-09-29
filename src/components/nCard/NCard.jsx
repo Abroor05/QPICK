@@ -1,6 +1,7 @@
 import React from "react";
 import "./NCard.css";
 import { IoMdStar } from "react-icons/io";
+import { LuEye } from "react-icons/lu";
 
 function NCard() {
   return (
@@ -33,6 +34,7 @@ function NCard() {
             </div>
           </div>
         </div>
+        <span className='eyeBtn'><LuEye /></span>
       </div>
     </>
   );

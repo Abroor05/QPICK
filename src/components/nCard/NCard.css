@@ -3,6 +3,7 @@
   padding: 10px;
   box-shadow: 0px 0px 30px rgba(189, 190, 196, 0.37);
     border-radius: 10px;
+    position: relative;
 }
 
 .nCardImg {
@@ -43,3 +44,11 @@
   font-weight: 500;
 }
 
+.eyeBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  color: #555;
+  cursor: pointer;
+}

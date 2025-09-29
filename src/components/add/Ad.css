@@ -1,0 +1,30 @@
+.adPage {
+    width: 1200px;
+    margin-bottom: 20px;
+}
+
+.ad {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.adImg {
+    width: 20%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.adImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Card.css"
+import { LuEye } from 'react-icons/lu'
 
 function Card() {
   return (
@@ -11,6 +12,8 @@ function Card() {
             <div className="cardInfo">
                 <h3>Стеклянные</h3>
             </div>
+
+            <span className='eyeBtn'><LuEye /></span>
         </div>
     </>
   )
