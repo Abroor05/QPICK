@@ -36,4 +36,13 @@
     width: 130% !important;
     margin: auto;
   }
+
+  .adPage{
+    width: 100%;
+
+  }
+
+  .ad {
+    width: 100%;
+  }
 }

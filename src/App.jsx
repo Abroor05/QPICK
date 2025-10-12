@@ -8,6 +8,7 @@ import Home from "./pages/home/Home";
 import Cart from "./pages/cart/Cart";
 import SignIn from "./pages/signIn/SignIn";
 import Login from "./pages/login/Login";
+import OneProdact from "./components/oneProdact/OneProdact";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,6 +23,7 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/oneProdact" element={<OneProdact/>} />
         </Routes>
 
         <Footer />

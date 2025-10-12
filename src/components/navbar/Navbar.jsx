@@ -16,7 +16,7 @@ function Navbar({ setLoginModal, loginModal }) {
               </Link>
             </div>
             <div className="selectMobilePhone">
-              <label for="phones">Telefon rusumini tanlang:</label>
+              <label htmlFor="phones">Telefon rusumini tanlang:</label>
               <select id="phones" name="phones">
                 <option value="iphone">iPhone</option>
                 <option value="samsung">Samsung</option>
