@@ -34,10 +34,9 @@ function CardModal({ setOpenCardModal }) {
               quod.
             </p>
             <div className="butBtn">
-              
-
               <div className="addProdats">
-                <button className="minusCard"
+                <button
+                  className="minusCard"
                   onClick={() => {
                     if (addProdactCount > 0) {
                       setAddProdactCount(addProdactCount - 1);
@@ -49,7 +48,8 @@ function CardModal({ setOpenCardModal }) {
 
                 <h1 className="countCard">{addProdactCount}</h1>
 
-                <button className="plassCard"
+                <button
+                  className="plassCard"
                   onClick={() => {
                     setAddProdactCount(addProdactCount + 1);
                   }}
@@ -58,9 +58,9 @@ function CardModal({ setOpenCardModal }) {
                 </button>
               </div>
 
-              <button className="addToCardBtn" >Add to cart</button>
+              <button className="addToCardBtn">Add to cart</button>
             </div>
-            <Link to={"/oneProdact"} >See More</Link>
+            <Link to={"/oneProdact"}>See More</Link>
           </div>
         </div>
       </div>

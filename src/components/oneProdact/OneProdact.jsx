@@ -1,4 +1,5 @@
 import React from 'react'
+import './OneProdact.css'
 
 function OneProdact() {
   return (
@@ -7,7 +8,25 @@ function OneProdact() {
         <div className="container">
             <div className="oneProdactAll">
                 <div className="oneProdactImg">
-                    <img src="" alt="" />
+
+                    <div className="arrImgs">
+                        <div className="arrImg">
+                            <img src="/imgs/naushnik1.png" alt="" />
+                        </div>
+                        <div className="arrImg">
+                            <img src="/imgs/naushnik1.png" alt="" />
+                        </div>
+                        <div className="arrImg">
+                            <img src="/imgs/naushnik1.png" alt="" />
+                        </div>
+                        <div className="arrImg">
+                            <img src="/imgs/naushnik1.png" alt="" />
+                        </div>
+                    </div>
+
+                    <div className="mainImg">
+                        <img src="/imgs/card1.png" alt="" />
+                    </div>
                 </div>
 
                 <div className="oneProdactInfo">
@@ -27,6 +46,16 @@ function OneProdact() {
                             <span></span>
                         </div>
                     </div>
+
+                    <div className="addToCards">
+                        <div className="countControl">
+                            <button>-</button>
+                            <h2>0</h2>
+                            <button>+</button>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </div>
